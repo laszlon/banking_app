@@ -1,0 +1,5 @@
+CREATE TABLE productType (
+  ID INT IDENTITY(1,1) PRIMARY KEY,
+  name VARCHAR(100) NOT NULL,
+  Deleted INT
+)

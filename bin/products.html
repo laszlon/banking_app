@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <title>Banking_app</title>
+</head>
+<body>
+    <h2>Hozz létre vagy válaszd ki a terméket!</h2>
+    <form action="add_product.php" method="post">
+        <label for="product">Termék:</label>
+        <input type="text" id="product" name="product" required>
+        <label for="price">Ár:</label>
+        <input type="number" id="price" name="price" required step="0.01">
+        <button type="submit">Termék hozzáadás</button>
+    </form>
+    <h3>Válassz terméket</h3>
+    <form action="select_product.php" method="post">
+        <label for="product">Termékek:</label>
+        <select id="product" name="product">
+            <!-- terméklista -->
+        </select>
+        <button type="submit">Választ</button>
+    </form>
+</body>
+</html>

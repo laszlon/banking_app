@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <title>Banking_app</title>
+</head>
+<body>
+    <h2>Add meg a tranzakciót</h2>
+    <form action="transaction.php" method="post">
+        <label for="amount">Amount:</label>
+        <input type="number" id="amount" name="amount" required step="0.01">
+        <button type="submit" name="action" value="add">Add</button>
+        <button type="submit" name="action" value="subtract">Subtract</button>
+    </form>
+</body>
+</html>
