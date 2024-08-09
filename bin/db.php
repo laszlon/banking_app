@@ -1,5 +1,5 @@
 <?php
-$servername = "DESKTOP-5FH0NHP";
+$serverName = "DESKTOP-5FH0NHP";
 $connectionOptions = array(
     "Database" => "banking",
     "Uid" => "tesztelek",
@@ -15,7 +15,7 @@ if ($conn === false) {
 }
 
 // Példa lekérdezés
-$sql = "SELECT * FROM yourTableName";
+$sql = "SELECT * FROM products";
 $stmt = sqlsrv_query($conn, $sql);
 
 if ($stmt === false) {
@@ -25,7 +25,7 @@ if ($stmt === false) {
 
 // Eredmények feldolgozása
 while ($row = sqlsrv_fetch_array($stmt, SQLSRV_FETCH_ASSOC)) {
-    echo $row['columnName'] . "<br />";
+    echo $row['name'] . "<br />";
 }
 
 // Kapcsolat lezárása
