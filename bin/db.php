@@ -31,5 +31,5 @@ while ($row = sqlsrv_fetch_array($stmt, SQLSRV_FETCH_ASSOC)) {
 // Kapcsolat lezárása
 sqlsrv_free_stmt($stmt);
 sqlsrv_close($conn);
-//teszt
+//teszt2
 ?>
