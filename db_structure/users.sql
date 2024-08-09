@@ -4,3 +4,4 @@ CREATE TABLE users (
   password VARCHAR(255) NOT NULL,
   Deleted int
 )
+--alkalmazottak tábla
